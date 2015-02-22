@@ -228,6 +228,7 @@ public class SimpleValueReplacer {
 		return newExt;
 	}
 	
+	/*
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	SimpleValueReplacer svr=new SimpleValueReplacer();
@@ -235,5 +236,5 @@ public class SimpleValueReplacer {
 	//svr.hcCaller();
 	svr.otherCaller(filename, allBusinessKeys, outputDir, convertor, numOccur);
 	}
-
+*/
 }
