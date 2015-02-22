@@ -44,11 +44,15 @@ public class Launch2 extends JFrame implements ActionListener{
 	private JMenuItem mntmHelp;
 	private JMenuItem mntmAbout;
 	private JButton btnGenerate;
-	@Override
+	
 	public void actionPerformed(ActionEvent evt) {
 		// TODO Auto-generated method stub
 		Object src=evt.getSource();
 		System.out.println("a button clicked");
+		if(src.equals(mntmAbout))
+		{
+			JOptionPane.showMessageDialog(this, "Author: Ankur Srivastava, ankcrimson@yahoo.com");
+		}
 		if(src.equals(btnsrcFile))
 		{
 			int i=srcFielLocfld.showOpenDialog(this);
@@ -86,7 +90,7 @@ public class Launch2 extends JFrame implements ActionListener{
 		getContentPane().setLayout(new BorderLayout(0, 0));
 		
 		JMenuBar menuBar = new JMenuBar();
-		menuBar.setBackground(new Color(204, 255, 255));
+		menuBar.setBackground(new Color(204, 204, 255));
 		//header.add(menuBar);
 		
 		
@@ -131,7 +135,7 @@ public class Launch2 extends JFrame implements ActionListener{
 		getContentPane().add(footer, BorderLayout.SOUTH);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(204, 255, 204));
+		panel.setBackground(new Color(204, 204, 255));
 		
 		panel.setBorder(null);
 		//panel.setBackground(new Color(204, 255, 255));
