@@ -125,13 +125,7 @@ public class SimpleValueReplacer {
 	}
 	public boolean otherCaller(String filename, String allBusinessKeys,String outputDir,String convertor,int numOccur )
 	{
-		/*String filename="ip.xml20130822xls";
-		String allBusinessKeys="Configuration::Configura{000}n;;Windows::Wi{654}ws";
-		String numberOfOccurances="60";
-		String outputDir="outputs";
-		String convertor="";//"20130822::yyyyMMdd";
-		int numOccur=Integer.parseInt(numberOfOccurances.trim());
-		*/System.out.println("calling");
+		System.out.println("calling");
 		try{
 		process(outputDir, filename, numOccur, allBusinessKeys,convertor);
 		}catch(Exception e){return false;}
@@ -239,7 +233,7 @@ public class SimpleValueReplacer {
 	SimpleValueReplacer svr=new SimpleValueReplacer();
 	//svr.hcCaller();
 	//svr.hcCaller();
-	svr.hcCaller();
+	svr.otherCaller(filename, allBusinessKeys, outputDir, convertor, numOccur);
 	}
 
 }

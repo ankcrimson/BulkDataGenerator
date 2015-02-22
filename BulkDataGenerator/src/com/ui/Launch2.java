@@ -280,10 +280,24 @@ public class Launch2 extends JFrame implements ActionListener{
 	
 	public static void main(String[] args) {
 		
-		
+		if(args.length>=5)
+		{
+			SimpleValueReplacer svr=new SimpleValueReplacer();
+			String filename=args[0];
+			String allBusinessKeys=args[1];
+			String outputDir=args[2];
+			String convertor=args[3];
+			String num=args[4];
+			int numOccur=Integer.parseInt(num);
+			svr.otherCaller(filename, allBusinessKeys, outputDir, convertor, numOccur);
+		}
+		else
+		{
+			System.out.println("Launching UI");
 		Launch2 l2=new Launch2();
 		l2.setVisible(true);
 		l2.pack();
 		//l2.setSize(800, 600);
+		}
 	}
 }
