@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bulkdatagenerator by ankcrimson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Bulkdatagenerator</h1>
+      <h2 class="project-tagline">Bulk Data Generator For Perofrmance Testing Projects</h2>
+      <a href="https://github.com/ankcrimson/BulkDataGenerator" class="btn">View on GitHub</a>
+      <a href="https://github.com/ankcrimson/BulkDataGenerator/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ankcrimson/BulkDataGenerator/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="bulk-testdata-generator" class="anchor" href="#bulk-testdata-generator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bulk Testdata Generator</h1>
+
+<h2>
+<a id="initial-gui-screen" class="anchor" href="#initial-gui-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial GUI Screen:</h2>
+
+<h2>
+<a id="terms-explained" class="anchor" href="#terms-explained" aria-hidden="true"><span class="octicon octicon-link"></span></a>Terms Explained:</h2>
+
+<h3>
+<a id="source-file" class="anchor" href="#source-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source File:</h3>
+
+<p>This is an example source file to be used as a base model for replication. This can be any kind of text readable file.</p>
+
+<h3>
+<a id="target-directory" class="anchor" href="#target-directory" aria-hidden="true"><span class="octicon octicon-link"></span></a>Target Directory:</h3>
+
+<p>This is a directory where our generated files will be stored into</p>
+
+<h3>
+<a id="business-keys" class="anchor" href="#business-keys" aria-hidden="true"><span class="octicon octicon-link"></span></a>Business Keys:</h3>
+
+<p>This is the part where its mentioned which part of data to consider as business keys so that that part may be kept as unique in each and every generated file.</p>
+
+<h3>
+<a id="number-of-files" class="anchor" href="#number-of-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Number of files:</h3>
+
+<p>This is the part where we define how many files will be generated.</p>
+
+<h3>
+<a id="extension" class="anchor" href="#extension" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extension:</h3>
+
+<p>This is additional field which is optional to use, This can be used if we want a specific date format in our generated files as an extension</p>
+
+<h2>
+<a id="sample-execution" class="anchor" href="#sample-execution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample Execution:</h2>
+
+<h3>
+<a id="our-input-file" class="anchor" href="#our-input-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Our Input File:</h3>
+
+<h3>
+<a id="output-files" class="anchor" href="#output-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Output Files:</h3>
+
+<h3>
+<a id="outputfile1" class="anchor" href="#outputfile1" aria-hidden="true"><span class="octicon octicon-link"></span></a>OutputFile1:</h3>
+
+<p>Here we can see that book id got changed in each and every file.
+The value of book id will change for each and every generated file starting from 102 onwards…</p>
+
+<h2>
+<a id="explaination-of-business-keys-field" class="anchor" href="#explaination-of-business-keys-field" aria-hidden="true"><span class="octicon octicon-link"></span></a>Explaination of Business Keys field:</h2>
+
+<p>bk101::bk{101}</p>
+
+<h3>
+<a id="format" class="anchor" href="#format" aria-hidden="true"><span class="octicon octicon-link"></span></a>format:</h3>
+
+<p>[source search value][::][what to replace with {a numeric value to be incremented in each file}]</p>
+
+<p>Now here is where all the magic happens… The numeric value gets incremented for each and every file that gets generated.
+Since this just replaces the file contents, it becomes platform and format independent and hence whichever file that could be opened by a text editor, can be replicated with the help of this tool.</p>
+
+<h2>
+<a id="what-if-my-file-contains-multiple-business-keys-to-be-edited-in-each-file" class="anchor" href="#what-if-my-file-contains-multiple-business-keys-to-be-edited-in-each-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>What if my file contains multiple business keys to be edited in each file?</h2>
+
+<p>Solution is to use multiple business keys separated by double semicolons… eg.</p>
+
+<h2>
+<a id="sample-output-file" class="anchor" href="#sample-output-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample Output File:</h2>
+
+<h3>
+<a id="file1" class="anchor" href="#file1" aria-hidden="true"><span class="octicon octicon-link"></span></a>File1:</h3>
+
+<h3>
+<a id="file2" class="anchor" href="#file2" aria-hidden="true"><span class="octicon octicon-link"></span></a>File2:</h3>
+
+<p>This tool supports huge file size and can support generation of millions of files.</p>
+
+<h2>
+<a id="for-any-queries-contact-me-or-any-other-contributors-who-might-join-in" class="anchor" href="#for-any-queries-contact-me-or-any-other-contributors-who-might-join-in" aria-hidden="true"><span class="octicon octicon-link"></span></a>For any queries contact me or any other contributors who might join in.</h2>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ankcrimson/BulkDataGenerator">Bulkdatagenerator</a> is maintained by <a href="https://github.com/ankcrimson">ankcrimson</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
