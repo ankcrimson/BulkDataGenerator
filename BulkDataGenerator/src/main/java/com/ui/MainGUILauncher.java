@@ -30,7 +30,7 @@ import javax.swing.border.BevelBorder;
 import com.logic.SimpleValueReplacer;
 
 
-public class Launch2 extends JFrame implements ActionListener{
+public class MainGUILauncher extends JFrame implements ActionListener{
 	private JTextField srcFileLoc;
 	private JTextField tgtFileFld;
 	private JTextField bKeyFld;
@@ -84,7 +84,7 @@ public class Launch2 extends JFrame implements ActionListener{
 		}
 	}
 	
-	public Launch2() {
+	public MainGUILauncher() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBackground(Color.WHITE);
 		getContentPane().setLayout(new BorderLayout(0, 0));
@@ -294,7 +294,7 @@ public class Launch2 extends JFrame implements ActionListener{
 		else
 		{
 			System.out.println("Launching UI");
-		Launch2 l2=new Launch2();
+		MainGUILauncher l2=new MainGUILauncher();
 		l2.setVisible(true);
 		l2.pack();
 		//l2.setSize(800, 600);
