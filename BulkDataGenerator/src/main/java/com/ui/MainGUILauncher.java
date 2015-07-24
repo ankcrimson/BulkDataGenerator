@@ -45,20 +45,22 @@ public class MainGUILauncher extends JFrame implements ActionListener{
 	private JMenuItem mntmAbout;
 	private JButton btnGenerate;
 	
+	//All our actions are taken care of over here
 	public void actionPerformed(ActionEvent evt) {
-		// TODO Auto-generated method stub
 		Object src=evt.getSource();
-		System.out.println("a button clicked");
+		//About button clicked
 		if(src.equals(mntmAbout))
 		{
 			JOptionPane.showMessageDialog(this, "Author: Ankur Srivastava, ankcrimson@yahoo.com");
 		}
+		//Source file button clicked
 		if(src.equals(btnsrcFile))
 		{
 			int i=srcFielLocfld.showOpenDialog(this);
 			if(i==0)
 				srcFileLoc.setText(srcFielLocfld.getSelectedFile().getPath());
 		}
+		//Target directory button clicked
 		else if(src.equals(btnTgtFile))
 		{
 			
@@ -67,6 +69,7 @@ public class MainGUILauncher extends JFrame implements ActionListener{
 			if(i==0)
 				tgtFileFld.setText(tgtFielLocfld.getSelectedFile().getPath());
 		}
+		//Generate button clicked
 		else if(src.equals(btnGenerate))
 		{
 			String filename=srcFileLoc.getText();
@@ -85,6 +88,7 @@ public class MainGUILauncher extends JFrame implements ActionListener{
 	}
 	
 	public MainGUILauncher() {
+		super("Bulk TestData Generator");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBackground(Color.WHITE);
 		getContentPane().setLayout(new BorderLayout(0, 0));
@@ -297,7 +301,6 @@ public class MainGUILauncher extends JFrame implements ActionListener{
 		MainGUILauncher l2=new MainGUILauncher();
 		l2.setVisible(true);
 		l2.pack();
-		//l2.setSize(800, 600);
 		}
 	}
 }
