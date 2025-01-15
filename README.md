@@ -52,7 +52,3 @@ This tool supports huge file size and can support generation of millions of file
 
 ## For any queries contact me or any other contributors who might join in.
 
-Author:
->Ankur Srivastava [ankcrimson]
->ankcrimson@yahoo.com
->AnkurPrakash.Srivastava@gmail.com
